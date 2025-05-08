@@ -1,0 +1,60 @@
+{% load static %}
+<footer class="footer">
+    <div className="menu-fullwidth">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-footer">
+                            <h2>E-Healthcare</h2>
+                            <p>Hệ thống chăm sóc sức khỏe trực tuyến hàng đầu Việt Nam, cung cấp dịch vụ y tế chất lượng cao cho mọi người.</p>
+                            <div class="social">
+                                <ul>
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-footer f-link">
+                            <h2>Liên kết nhanh</h2>
+                            <ul>
+                                <li><a href="{% url 'home' %}"><i class="fas fa-angle-right"></i>Trang chủ</a></li>
+                                <li><a href="{% url 'doctors' %}"><i class="fas fa-angle-right"></i>Bác sĩ</a></li>
+                                <li><a href="{% url 'appointments' %}"><i class="fas fa-angle-right"></i>Đặt lịch</a></li>
+                                <li><a href="{% url 'services' %}"><i class="fas fa-angle-right"></i>Dịch vụ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-footer">
+                            <h2>Liên hệ</h2>
+                            <ul class="time-sidual">
+                                <li><i class="fas fa-map-marker-alt"></i> 123 Đường ABC, Quận XYZ, TP.HCM</li>
+                                <li><i class="fas fa-phone"></i> (028) 1234 5678</li>
+                                <li><i class="fas fa-envelope"></i> contact@ehealthcare.vn</li>
+                            </ul>
+                            <div class="newsletter-inner">
+                                <input type="text" placeholder="Email của bạn">
+                                <button class="button"><i class="fas fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="copyright">
+        <div class="container">
+            <div class="copyright-content">
+                <p>&copy; {% now "Y" %} E-Healthcare. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </div>
+</footer> 

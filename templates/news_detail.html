@@ -1,0 +1,7 @@
+<!-- templates/healthcare/news_detail.html -->
+<h1>{{ news.title }}</h1>
+{% if news.image %}
+    <img src="{{ news.image.url }}" alt="{{ news.title }}">
+{% endif %}
+<p>{{ news.content|linebreaks }}</p>
+<p><em>Đăng ngày: {{ news.created_at }}</em></p>
